@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swipe gallery</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://kit.fontawesome.com/a67d467ec8.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="wrap">
+    <h1>UI/UX <span>PORTFOLIO</span></h1>
+
+    <ul class="auto">
+      <li class="btnStart">
+        <i class="fas fa-play"></i>
+      </li>
+      <li class="btnStop">
+        <i class="fas fa-pause"></i>
+      </li>
+    </ul>
+
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="inner">
+          <div class="con">
+            <img
+              src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8fA%3D%3D"
+              alt="">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, a.</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="inner">
+          <div class="con">
+            <img
+              src="https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTV8fHxlbnwwfHx8fHw%3D"
+              alt="">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, a.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="inner">
+          <div class="con">
+            <img
+              src="https://images.unsplash.com/photo-1600774236989-a383d15c2e8a?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTd8fHxlbnwwfHx8fHw%3D"
+              alt="">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="inner">
+          <div class="con">
+            <img
+              src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTN8fHxlbnwwfHx8fHw%3D"
+              alt="">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, a.</p>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="inner">
+          <div class="con">
+            <img
+              src="https://images.unsplash.com/photo-1597045566677-8cf032ed6634?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8MTZ8fHxlbnwwfHx8fHw%3D"
+              alt="">
+            <h2>Lorem ipsum dolor sit.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, a.</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script>
+    var swiper = new Swiper(".wrap", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "fraction",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+
+      slidesPerView: "auto",
+      spaceBetween: 50,
+      loop: true,
+      centeredSlides: true,
+      speed: 1000,
+      direction: "horizontal",
+      effect: "coverflow",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: -100,
+        depth: 400,
+        modifier: 1,
+        slideShadow: false
+      }
+    });
+  </script>
+</body>
+
+</html>
